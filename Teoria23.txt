@@ -1,0 +1,5 @@
+Podejście tradycyjne (np. Bootstrap) bazuje na gotowych, semantycznych komponentach (np. klasa .card lub .btn), które zawierają w sobie cały zestaw z góry narzuconych stylów. Podejście utility-first (np. Tailwind CSS) polega na budowaniu wyglądu bezpośrednio w JSX za pomocą zestawu bardzo małych klas jednozadaniowych (np. p-4, bg-blue-500, rounded), z których każda odpowiada za dokładnie jedną właściwość CSS.
+
+Główną zaletą utility-first jest pełna swoboda projektowa bez konieczności nadpisywania narzuconych stylów frameworka oraz brak konieczności wymyślania nazw klas i przełączania się między plikami HTML/JSX a plikami CSS. Ponadto nieużywane klasy są automatycznie usuwane przy budowaniu aplikacji, co drastycznie zmniejsza rozmiar finalnego pliku CSS.
+
+Główną wadą utility-first jest bardzo długi i mało czytelny kod wewnątrz atrybutów className (tzw. "soup of classes"), co utrudnia przeglądanie struktury HTML. Wymaga to również dokładnej znajomości nazw setek klas narzędziowych na start oraz sprawia, że przenoszenie stylów poza środowisko danego frameworka (np. do czystego HTML) staje się uciążliwe.
